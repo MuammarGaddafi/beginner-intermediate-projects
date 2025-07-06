@@ -18,6 +18,13 @@ this is what copilot said about the differences :
 when we write window=tk(), what is tk() in reality and how it works :
 actually tk() is just like set(), list(), dict() .... they are all a class constructor, they are built in functions in python that create a new tk, set, list etc objects, so when i write set() i'm calling a class constuctor to make a set object so tk() make a tk object
 
+* creating a widget (label in this case) :
+  my_label=label(the tk object put in name, textvariable=the variable connected with where we would put the text, customization ) : mylabel is the widget name, label is the class constructor : it creates a label widget :
+
+  ![image](https://github.com/user-attachments/assets/c07ee3f3-644d-4851-b915-f4d115b371d3)
+
+  mainloop is a method that keeps our app running and waiting for the user interactions and responding to it, other wise the window would show up and close immediately, it needs the loop to keep working 
+
 
 
 
