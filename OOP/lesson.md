@@ -107,6 +107,71 @@ When It’s Overkill ?
 - No other code depends on your class
 
 
+# Abstraction :
+
+abstraction is actually needed to create a class which contains methods and attributes, called abstracted class that we cant make instances of it and use its features and abstracted methods, so its created not to give us instances since we cannot make objects from abstracted classes but it's created to define how children classes would behave (any abstract class should have children classes that inherit all the class properties)
+- while working in a company, you may have a task of fixing or working on specific class, abstraction allow you to work on this class without worrying about the other classes and their roles or even knowing what they are, you only focus on your task it couldn't be affected by other classes
+
+### abstraction syntax and implementation : 
+
+
+
+# Inheritance : 
+
+![WhatsApp Image 2025-07-08 at 23 33 33_d77c683a](https://github.com/user-attachments/assets/ed01db57-89b7-4bb6-8c7b-f18c161ce61c)
+
+As we see, sometimes we get many common attributes between this two classes, and we know the famous concept of IT. World : do not repeat 
+
+
+So the best solution is to make new class called person then the student and teacher classes would inherit those attributes from this class
+
+
+The person is called the parent class
+
+![WhatsApp Image 2025-07-08 at 23 36 10_94489065](https://github.com/user-attachments/assets/689d73f7-b9d8-4632-8ef6-a093a5c0aaec)
+
+
+
+# Polymorphism : 
+
+poly means multiple and morphism means the shape it takes : so it means that a thing could take more than shape and aspect
+So here in oop it means that the method could behave and act in multiple ways
+- polymorphism devides into two essentials : over loading and over riding
+
+Overloading vs overriding simply : 
+The name speaks for itself :over loading is loading the method over and over with different number and types of arguments
+Over riding is riding the method over and over with different behaviour and needs every time when the method is inherited 
+
+
+Overloading is the same method but can take multiple and different arguments in every call 
+
+Over riding :related to inheritance,  when a subclass redefine the **same** method **inherited** from the parent class to change its behavior 
+Thats all
+
+![WhatsApp Image 2025-07-12 at 13 21 45_e9c8cebf](https://github.com/user-attachments/assets/000fda02-daac-4c9f-a97f-da9226ac41dc)
+
+utility : 
+If we don't use polymorphism, in many cases we gonna go through a serious trouble, bcz working on real life projects would be intensely complexe, if we use new method for every need while the parameters are different or the behaviour is slightly different, we will make new method every time like sum1() which accepts 2 integers, sum2() which accept two floats, sum3() which accepts 3 integers ...... Until we end up using even 32 different sum method, which is not practical, so with polymorphism we may use only one method with different behaviours or different arguments
+
+### how to implement them :
+1) over loading :
+   we will take a method called  sum() as an example 
+
+   First time its sum(int x , int y)
+   
+   Second time used its sum(int x int y int z)
+   
+   Third time : sum (float x , float y)
+
+   so we used the same method with same behaviour but we change the number and type of arguments without changing the code of the method
+
+
+
+
+
+# OOP SYNTAX : 
+
+
 
 
 
