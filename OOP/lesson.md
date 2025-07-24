@@ -1,5 +1,10 @@
 # introduction :
 
+oop is a whole new way and  methodology of concepting and writing codes, it is the step right above the procedural programming, say good bye to procedural coding since it has its own utility and made our life easier in solving many problem but it comes to a limit where it cannot be pushed beyond it, so we need a new sort of programming to tackle more complexe solutions : 
+
+Which is OOP, so its normal if you come across some new stuffs that may seem weird and obscure as they are so different to known concepts we learned in procedural programming
+
+
 ![WhatsApp Image 2025-07-07 at 14 58 51_24195dcc](https://github.com/user-attachments/assets/3fc1766d-0a0c-4d06-a638-6eb709c5f44c)
 
 The best example to understand what is an object is the chest example : we have so many pieces in the game , every piece have multiple variables related to it, like the position, the color, the state(dead or not), it would be a touph job to deal with all those variables related to all those pieces seperately, actually we need to deal with those pieces as a whole thing, a whole variable, a whole object !
@@ -23,7 +28,7 @@ lets dive into the OOP 4 backbones:
 - Inheritance 
 - Polymorphism
 
-### encapsulation :
+# encapsulation :
 why do we use encapsulation ? and how to implement it correctly ?
 first of all, encapsulation is based on 2 types pf methods, Setter and getters methods :
 setters for changing values and getters for getting and seeing values
@@ -105,6 +110,26 @@ When It’s Overkill ?
 - You’re doing a quick script or solo project
 - The attribute doesn't require validation
 - No other code depends on your class
+
+### implementation of private attributes for encapsulation : 
+
+private attributes are attributes cannot be modified and shown and implement acts on it directly and easily : 
+When the attribute is private, example : 
+
+Self.__name 
+
+Student1 is an object of student class 
+
+When you write print(student1.name) it will give you an error because of undefined and unexisting name attribute 
+
+When you write print(student1.__name), it will also give you an error, because private attribute cannot be given and accessed directly 
+
+If you write Student1.name="ahmed" 
+This is not considered as name attribute modifying, it will be considered as if you created a new attribute to the object student1 and assigned to it "ahmed", therefore if you write print(student1.name) it will print ahmed not an error, because you asked to print the newly created attribute called name, its different to the private attribute __name
+
+so we use the getters and setters that allow us to get and modify those private attributes
+the setters and getters syntax to deal with those private attributes :
+
 
 
 # Abstraction :
@@ -194,6 +219,7 @@ any attribute in the init method should be filled otherwise it would produce an 
 
 - anything (attributes) defined out of the init method, is called class attribute which would be given to any object created from that class directly (and class attributes should have assigned values)
 
+When you want to access class attributes, like for example we have a class attribute called number of objects that is a value that increment every time we create an object of the class, you access it through the class name : calss.number_of_objects, and you can also access it through any object of the class and would show the same value whatever is the object, but for more clarity its better to access it with the class name
 
 
 
