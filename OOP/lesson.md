@@ -165,17 +165,68 @@ If we don't use polymorphism, in many cases we gonna go through a serious troubl
 
    so we used the same method with same behaviour but we change the number and type of arguments without changing the code of the method
 
+   !!! implementation of the over loading to make the method adapt to different and multiple arguments its a little bit tricky in python because direct over loading in python is not supported, so we have two options : adjusting the method to fit to multiple arguments, or make the method accept whatever argument with *arg
+
+    adjusting the method to multiple args :
+
+   ![WhatsApp Image 2025-07-09 at 00 22 11_247b568d](https://github.com/user-attachments/assets/22313fff-630f-4df7-bdd1-eee462dab073)
+
+   difference between over loading between python and other languages :
+
+   <img width="618" height="542" alt="image" src="https://github.com/user-attachments/assets/5ab4ecc9-34fe-4d20-a818-635283b3aa43" />
+
+   ![WhatsApp Image 2025-07-14 at 19 31 34_6f889fce](https://github.com/user-attachments/assets/7df0b6b3-9320-47b6-9de5-b813acce991f)
+
+
+
+
 
 
 
 
 # OOP SYNTAX : 
 
+we usually use the dunder function init (dunder functions are inherited by default to any class in python), its a method make the initializing called automaticaly to fill the object attributes when its created 
+if we dont define init method in the class the objects would be created when you call the class constructor but they would be empty without any attribute, so init is a method that automatically initialize the object with its attributes when its created 
+
+the init take self as a fixed argument which acts as the instances of the class
+any attribute in the init method should be filled otherwise it would produce an error, if you want a default value for an attribute, you give it to the attribute when you give it as an argument for the init method : __ init __ ( self , state , number of children = 0 ) so if number of children is not filled it would have 0 as value since it is its default value
+
+- anything (attributes) defined out of the init method, is called class attribute which would be given to any object created from that class directly (and class attributes should have assigned values)
 
 
+
+
+# important notes : 
+
+1) You can have two methods with the same name but they shouldn't be in the same class otherwise one of them would over writes the other 
+(This is not called over riding because they are not considered the same method, they are different methods despite same name since they are different classes python would interprets the difference. over riding is only in inheritance because it modifies the same method which is inherited )
 
 
 
 ## related general informations : 
 - Primitive data types are the type which stores simple and one value like int float boolean char etc.
 - Classes are blue prints for objects, blue prints meaning the original or the parent version
+
+- so Any object in our programming language is made from a specific class
+
+Example : 
+
+X=10 , x is an object and its made from specific class which is int class
+
+other example :
+X=codezilla 
+
+Print x.upper() , upper is a method that belongs to the string class 
+
+Python interpretor would interpret the x type meaning to which class does it belong when you define it as x=........
+
+- When you define x=1 it means its integer , then when you command x.upper() an error would show up saying int object has no attribute (method) upper it means the int class has no method called upper
+
+-Example of method overloading: some times we find a function that work on summing two numbers like 2+4 but when you give it number and character: 2+'a' it works and give you the sum of 2 and a ascii code : this is overloading it can adapt and work in different way with different parameters
+(!!!!! Its just an example doesn't mean its right, because int + character result is different from prog language to another, in some languages is an error)
+
+Operators and specific characters are also referring to specific method of classes
+
+Like 1+3 : + in this case is called a syntactic sugar that refer to a method called add belongs to int class
+!!! this is just an example to understand the concept, bcz add method is not over ridden here, every int bool float str ... classes have their own add method, not only one add method inherited to each class
