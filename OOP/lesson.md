@@ -130,6 +130,11 @@ This is not considered as name attribute modifying, it will be considered as if 
 so we use the getters and setters that allow us to get and modify those private attributes
 the setters and getters syntax to deal with those private attributes :
 
+<img width="970" height="366" alt="image" src="https://github.com/user-attachments/assets/20b8a426-ce30-47f0-a46e-9a6e0b8574d0" />
+
+as we see we made private attributes and defined methods to get and set those private attributes so we prevented direct access to them
+
+
 
 
 # Abstraction :
