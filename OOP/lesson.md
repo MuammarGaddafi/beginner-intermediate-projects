@@ -81,6 +81,34 @@ These are the definition of getters and setters method
 And this is how we used them to print and modify
 
 
+### the secret and the utility of using encapsulation :
+
+I see no utility in using private attributes and then changing them and accessing them with getters and setters, if i gonna change them i simply change them in the common way student.age = .... Why am i doing all these stuffs, i see nothing special in encapsulation, i dont see why am i protecting the attributes and from who
+
+
+My answer : yeah, i feel you, maybe encapsulation seems useless and you don't know for which cases and users is it made for, you can't see the encapsulation real magic with those simple examples where it could be useless, but stay with me over this example and you will understand every point of it
+
+Encapsulation utility appears when you work with complex projects and especially with co workers and when you fix or work on an already existing code in a company, see this copilot example and explanation
+
+![WhatsApp Image 2025-07-11 at 11 50 12_26728fa7](https://github.com/user-attachments/assets/b70d1bf3-17e2-4588-a185-41ab6df01a28)
+
+![WhatsApp Image 2025-07-11 at 11 50 26_3a8477f1](https://github.com/user-attachments/assets/091cbed8-2ae7-49e7-ab9d-bd26ba8009f7)
+
+![WhatsApp Image 2025-07-11 at 11 50 46_667ed73e](https://github.com/user-attachments/assets/cf877cc7-9ea4-4d7f-9358-bec60ac36f6d)
+
+So the conclusion encapsulation prevent and return messages when changes are not valid and the messages and the code behaviour would clarify to the person who work on it for the first time all what he need to understand and the code process and mechanism, not just that, it would make things easier even for your future self when you get back to the code and trying to work on it and certainly you have forgotten bunch of things about it so it would be much more helpful to cope with it
+
+![WhatsApp Image 2025-07-11 at 12 15 50_6e58ddaf](https://github.com/user-attachments/assets/6bf73d8a-ea4e-4b51-b070-1389b398508b)
+
+When It’s Overkill ?
+
+- You’re doing a quick script or solo project
+- The attribute doesn't require validation
+- No other code depends on your class
+
+
+
+
 
 
 ## related general informations : 
