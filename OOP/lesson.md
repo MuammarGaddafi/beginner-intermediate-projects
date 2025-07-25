@@ -280,7 +280,7 @@ see in the general informations below how we used class methods for creating new
 
 So, one of the main utility of class method is creating objects in different way and with specific customization, this is so useful especially we cannot make more than one constructor (initialization ) method which is init, but with this trick now we can
 
-diving deeper into it :
+diving deeper into it : 
 
 ![WhatsApp Image 2025-07-11 at 14 26 01_003ccca3](https://github.com/user-attachments/assets/4d802632-2c2e-4c08-83e2-4faea7a7275d)
 
