@@ -240,6 +240,17 @@ instance methods could be used on any object from whatever class and in any cont
 
 - Class methods take only a class as an attribute, it couldn't take self or any thing related to the objects, it only take a class as an attribute so it can modify and access only things related to the class, like class attributes
 
+<img width="688" height="526" alt="image" src="https://github.com/user-attachments/assets/01dfdaee-64bb-49a3-bfef-3b2bb5b97b93" />
+
+this is an example of how we used and called the class method, it can take every thing of the cls (reference to the class) that does not belong to the object 
+
+see in the general informations below how we used class methods for creating new instances from the class : 
+
+So, one of the main utility of class method is creating objects in different way and with specific customization, this is so useful especially we cannot make more than one constructor (initialization ) method which is init, but with this trick now we can
+
+diving deeper into it :
+
+
 
 
 
