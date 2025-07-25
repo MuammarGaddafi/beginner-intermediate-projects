@@ -227,6 +227,21 @@ any attribute in the init method should be filled otherwise it would produce an 
 When you want to access class attributes, like for example we have a class attribute called number of objects that is a value that increment every time we create an object of the class, you access it through the class name : calss.number_of_objects, and you can also access it through any object of the class and would show the same value whatever is the object, but for more clarity its better to access it with the class name
 
 
+# Methods : 
+
+there are 3 types of methods
+
+### instance methods : 
+
+instance methods are the normal and the common methods
+instance methods could be used on any object from whatever class and in any context (only if the method take self as an argument meaning it is related to class objects)
+
+### class methods : 
+
+- Class methods take only a class as an attribute, it couldn't take self or any thing related to the objects, it only take a class as an attribute so it can modify and access only things related to the class, like class attributes
+
+
+
 
 # important notes : 
 
@@ -235,7 +250,7 @@ When you want to access class attributes, like for example we have a class attri
 
 
 
-## related general informations : 
+# related general informations : 
 - Primitive data types are the type which stores simple and one value like int float boolean char etc.
 - Classes are blue prints for objects, blue prints meaning the original or the parent version
 
@@ -261,3 +276,45 @@ Operators and specific characters are also referring to specific method of class
 
 Like 1+3 : + in this case is called a syntactic sugar that refer to a method called add belongs to int class
 !!! this is just an example to understand the concept, bcz add method is not over ridden here, every int bool float str ... classes have their own add method, not only one add method inherited to each class
+
+
+example containing class method :
+
+We imported a class from datetime libary called date 
+
+As you see 
+
+We used this expression : 
+
+Date.today().year : 
+
+Since we imported the class without * , so we would use the class name.method with every method of the class, This is why date.today()
+
+As we see date.today().year :
+
+Year is clearly an attribute so its obvious that today() method would return an object of date class
+
+So the result would be the current year - birthday year to get the age of that person
+
+![WhatsApp Image 2025-07-11 at 13 35 46_0cc1e1dc](https://github.com/user-attachments/assets/04b293f8-7486-473d-9859-51ba55bbb34e)
+
+![WhatsApp Image 2025-07-11 at 14 20 31_3d4ee445](https://github.com/user-attachments/assets/0899ce6a-2ea0-44c4-a17c-888fc942302e)
+
+As you see, the first thing you should notice, that we initialized an object student2 in different way without using the class constructor, we used a class method student.initfrombirthday to initialize meaning to create this object
+- but how we created an object throught this class method ?? we all know we need init function to initialize and fill the object values
+
+this is the class method :
+@classmethod
+
+def initFromBirthYear(cls, name, birthYear):
+
+  return cls(name, date.today().year - birthYear)
+
+the return cls(...) it is pointing to the student class as if we wrote Student(name, age)
+and we know init is automatic function in the class which is run when we class the class like when we call it by the class constructor so the init function runs with the name and age given to the class, so that's how we created an object by this class method 
+
+so we can use class methods to create objects 
+
+
+
+
