@@ -139,8 +139,13 @@ as we see we made private attributes and defined methods to get and set those pr
 
 # Abstraction :
 
+An abstract class is a class that cannot be instantiated on its own, meant to be subclassed (a parent class)
+
 abstraction is actually needed to create a class which contains methods and attributes, called abstracted class that we cant make instances of it and use its features and abstracted methods, so its created not to give us instances since we cannot make objects from abstracted classes but it's created to define how children classes would behave (any abstract class should have children classes that inherit all the class properties)
 - while working in a company, you may have a task of fixing or working on specific class, abstraction allow you to work on this class without worrying about the other classes and their roles or even knowing what they are, you only focus on your task it couldn't be affected by other classes
+so  you need children classes to complete the job, so abstract classes are something like incomplete classes, we cannot create objects directly from incomplete classes
+
+They can contain abstract methods that require children to inherit inheritedthose abstracrt methods, every abstract method created should be inherited otherwise it will rise an error
 
 ### abstraction syntax and implementation : 
 
@@ -159,6 +164,11 @@ So the best solution is to make new class called person then the student and tea
 The person is called the parent class
 
 ![WhatsApp Image 2025-07-08 at 23 36 10_94489065](https://github.com/user-attachments/assets/689d73f7-b9d8-4632-8ef6-a093a5c0aaec)
+
+this is what child clas inherit from its parent class, almost every thing (instance methods, class attributes and methods, object attributes with some special syntax to fulfill it)
+
+<img width="880" height="716" alt="image" src="https://github.com/user-attachments/assets/03427e0c-510d-4033-8e2f-5b9876b5dbb0" />
+
 
 
 
@@ -210,14 +220,12 @@ If we don't use polymorphism, in many cases we gonna go through a serious troubl
 
 
 
-
-
-
-
 # OOP SYNTAX : 
 
 we usually use the dunder function init (dunder functions are inherited by default to any class in python), its a method make the initializing called automaticaly to fill the object attributes when its created 
 if we dont define init method in the class the objects would be created when you call the class constructor but they would be empty without any attribute, so init is a method that automatically initialize the object with its attributes when its created 
+
+so Its written with double undescore so that python interpretes it as a specifc method that blongs to the dunders and run automatically to create and initialize the object, without double score python would consider it as a common method created by the programmer, and won't run it automatically and wouldn't have sense
 
 the init take self as a fixed argument which acts as the instances of the class
 any attribute in the init method should be filled otherwise it would produce an error, if you want a default value for an attribute, you give it to the attribute when you give it as an argument for the init method : __ init __ ( self , state , number of children = 0 ) so if number of children is not filled it would have 0 as value since it is its default value
@@ -249,6 +257,53 @@ see in the general informations below how we used class methods for creating new
 So, one of the main utility of class method is creating objects in different way and with specific customization, this is so useful especially we cannot make more than one constructor (initialization ) method which is init, but with this trick now we can
 
 diving deeper into it :
+
+![WhatsApp Image 2025-07-11 at 14 26 01_003ccca3](https://github.com/user-attachments/assets/4d802632-2c2e-4c08-83e2-4faea7a7275d)
+
+![WhatsApp Image 2025-07-11 at 14 26 12_c4cd0b48](https://github.com/user-attachments/assets/d671fb5a-e556-47a9-a339-64265ad33e32)
+
+![WhatsApp Image 2025-07-11 at 14 26 25_3fdb8441](https://github.com/user-attachments/assets/bb615140-0525-4bf7-a5d9-b2ba975bc68c)
+
+another example on how cls methods are useful for customized object creation :
+
+![WhatsApp Image 2025-07-11 at 16 12 42_772c868a](https://github.com/user-attachments/assets/47ed6eaf-c272-4e96-8e29-7787726c3a22)
+
+As you see we created a pizza class, its objects would take only one attribute called ingredients which is a list of ingredients
+
+If we want create specific type of this objects that its ingredients are well defined, as you see in the example, i made two class methods that help me to create pizza object that would be margherita and object that i want it vegetarian, and those two types of pizza i want them with well defined ingredients, so i made two class methods veg() and margherita() that don't take any argument, when i call them while creating a new pizza object they would create them as the wanted type : 
+
+Example 
+
+Pizza1=Pizza.veg() 
+
+It would create a pizza object with those ingredients 
+
+more ideas about it :
+
+![WhatsApp Image 2025-07-11 at 16 31 23_28ba138a](https://github.com/user-attachments/assets/d2e0bd93-690d-4740-9476-d79c346b5bff)
+
+Polymorphism object creation is what we saw in veg and margherita example
+
+- Cls is referring to the class which is called, not necessarily calling the class where the method is created in 
+
+Because in case like inheritance, the cls call the class which inherited the method from other class : like that :
+
+![WhatsApp Image 2025-07-11 at 16 34 18_855e1760](https://github.com/user-attachments/assets/e050223a-0b14-4d9a-8cae-6676059d5f8a)
+
+modifying class behaviour throught polymorphism :
+
+![WhatsApp Image 2025-07-11 at 23 19 35_f5530815](https://github.com/user-attachments/assets/5dc2d48f-8f7e-4719-ba86-e35b8fc5c8aa)
+
+![WhatsApp Image 2025-07-11 at 23 19 50_d136499b](https://github.com/user-attachments/assets/900700e1-d518-4696-9987-cf18a7257e52)
+
+
+
+
+
+![WhatsApp Image 2025-07-11 at 16 31 42_eb8d6b95](https://github.com/user-attachments/assets/47a22346-a2e5-43da-bf51-738cf6c00fd9)
+
+
+
 
 
 
@@ -326,6 +381,16 @@ and we know init is automatic function in the class which is run when we class t
 
 so we can use class methods to create objects 
 
+
+- we use decorators to define class or abstract methods : what are those decorators ?
+
+These  decorators are special python syntax that modifies the behavior of functions or methods.
+
+This is an example of decorators : how do they modify method behavior (what will they do) , the parameters that they take, and if they require another decorator or not
+
+![WhatsApp Image 2025-07-12 at 13 10 17_1aee011d](https://github.com/user-attachments/assets/6a1d6e71-5d8d-404b-9ff6-940eb3b3e164)
+
+![WhatsApp Image 2025-07-12 at 13 11 18_722be062](https://github.com/user-attachments/assets/3ff8e461-12ef-42bc-a655-9f7c6eb16b0c)
 
 
 
