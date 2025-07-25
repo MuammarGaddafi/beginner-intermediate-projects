@@ -149,6 +149,25 @@ They can contain abstract methods that require children to inherit inheritedthos
 
 ### abstraction syntax and implementation : 
 
+Follow me with this example to understand how to use abstraction
+We should import ABC class from abc libary
+Then, we create the abstract parent class which would inherit from ABC class, Abstraction is used for classes neither you want  to create objects from it nor other programmers, so you wanna keep it abstracted, used only for defining the behaviour of the children classes
+Any children class should inherit all the abstract methods, otherwise it would produce an error
+
+![WhatsApp Image 2025-07-12 at 14 07 09_943bdcc2](https://github.com/user-attachments/assets/93dbe73c-a40f-4835-9d28-f1e32fa82ce4)
+
+![WhatsApp Image 2025-07-12 at 14 08 04_46f191e9](https://github.com/user-attachments/assets/a273bc3f-0ca2-43f5-9f87-6e293cb4fced)
+
+As you see this has produced an error because we are not allowed to create vehicle object since vehicle is abstracted class
+
+![WhatsApp Image 2025-07-12 at 14 14 33_efbb5519](https://github.com/user-attachments/assets/fc65f0b5-c7e1-4a0b-a9de-6a76e882bb7f)
+
+We created car class inherited from vehicle class, and we implemented the astracted methods all, so when we do car.go() it prints the appropriate message (we over rided the method in every new children class)
+
+![WhatsApp Image 2025-07-12 at 14 17 25_8ed5371a](https://github.com/user-attachments/assets/2b44d597-7657-4505-b8f5-8d17d54cbdad)
+
+
+
 
 
 # Inheritance : 
@@ -218,6 +237,11 @@ If we don't use polymorphism, in many cases we gonna go through a serious troubl
    ![WhatsApp Image 2025-07-14 at 19 31 34_6f889fce](https://github.com/user-attachments/assets/7df0b6b3-9320-47b6-9de5-b813acce991f)
 
 
+We can even over ride dunders functions since they are considered inherited to all classes by default 
+like in this example we gonna over ride the dunder function in this class, we gonna modify the way it returns the string result :
+
+![WhatsApp Image 2025-07-12 at 14 48 33_113ae8f3](https://github.com/user-attachments/assets/4dcba95a-4971-4a1e-94cc-bef98f749b66)
+
 
 
 # OOP SYNTAX : 
@@ -237,7 +261,7 @@ When you want to access class attributes, like for example we have a class attri
 
 # Methods : 
 
-there are 3 types of methods
+there are 4 main types of methods
 
 ### instance methods : 
 
@@ -303,10 +327,23 @@ modifying class behaviour throught polymorphism :
 ![WhatsApp Image 2025-07-11 at 16 31 42_eb8d6b95](https://github.com/user-attachments/assets/47a22346-a2e5-43da-bf51-738cf6c00fd9)
 
 
+### abstract methods : 
+
+we have seen it in the abstraction part
 
 
+### static methods : 
 
+Static methods : they don't take neither class as a parameter nor an object (self) 
 
+But they can take arguments other than that
+static methods could be used by any object from any class since they are not related to the class made in because doesnt take self (which is the object of the class reference) as a parameter
+
+![WhatsApp Image 2025-07-12 at 15 03 28_0c8e3584](https://github.com/user-attachments/assets/590fc503-eeb5-4047-8012-ff76b0577654)
+
+![WhatsApp Image 2025-07-12 at 15 11 48_806cdd31](https://github.com/user-attachments/assets/767292a2-7e5d-4521-84e9-b95d395d9348)
+
+![WhatsApp Image 2025-07-12 at 15 15 53_d6dada02](https://github.com/user-attachments/assets/90a39890-29f0-49e9-820c-bc9f2e55fa70)
 
 
 # important notes : 
