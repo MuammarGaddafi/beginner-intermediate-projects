@@ -430,4 +430,12 @@ This is an example of decorators : how do they modify method behavior (what will
 ![WhatsApp Image 2025-07-12 at 13 11 18_722be062](https://github.com/user-attachments/assets/3ff8e461-12ef-42bc-a655-9f7c6eb16b0c)
 
 
+* methods arguments :
+
+<img width="1003" height="589" alt="image" src="https://github.com/user-attachments/assets/9e78da9d-b748-4033-844d-9c5368af453b" />
+
+if the method take anything besides to the object argument, then you pass it to the method : result.calculate(other argument)
+
+
+
 
