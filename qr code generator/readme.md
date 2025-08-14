@@ -2,6 +2,7 @@
 # lets get some knowledge : how does the QR code work ? 
 
 qr code, the achronym of quick response code, it is a code that scanners and devices can read but people cannot, it is like a whole language that has its own charachters and elements
+!!! qr code is oriented for strings encoding not images and other media encoding
 
 * 1st : the data modules : they are the black and white blocks in the qr code, and they handle storing all the information we wanna to convert into code
 
