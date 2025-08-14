@@ -18,3 +18,8 @@ qr code, the achronym of quick response code, it is a code that scanners and dev
 * can we have qr code with different colors : as long as it respects the qr code principals, which are based on contrast, you can color it
 scanners read qr code depending on the color contrast --> which depends on the grayscale, while the constrast is preserved, the qr code still works
 
+* the python pillow libary : libary for image processing :
+
+<img width="954" height="620" alt="image" src="https://github.com/user-attachments/assets/d0a0cea1-47cf-4cbc-b7ec-c10c477a2556" />
+
+
