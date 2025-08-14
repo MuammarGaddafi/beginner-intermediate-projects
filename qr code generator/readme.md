@@ -22,4 +22,9 @@ scanners read qr code depending on the color contrast --> which depends on the g
 
 <img width="954" height="620" alt="image" src="https://github.com/user-attachments/assets/d0a0cea1-47cf-4cbc-b7ec-c10c477a2556" />
 
+* printing the decoded string :
+
+<img width="1146" height="842" alt="image" src="https://github.com/user-attachments/assets/2fd154ca-f770-4a6c-90b4-9c47a30068ed" />
+
+
 
