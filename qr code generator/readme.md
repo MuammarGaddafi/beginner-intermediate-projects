@@ -14,6 +14,6 @@ qr code, the achronym of quick response code, it is a code that scanners and dev
 
 <img width="336" height="360" alt="image" src="https://github.com/user-attachments/assets/8ca69c69-8071-496f-b1db-e2fa47aa3429" />
 
-* can we have qr code with different colors : whatever it respects the qr code principals, which are based on contrast, you can color it
-scanner read qr code depending on the color contrast --> related to the grayscale, so while the constrast is preserved, the qr code still works
+* can we have qr code with different colors : as long as it respects the qr code principals, which are based on contrast, you can color it
+scanners read qr code depending on the color contrast --> which depends on the grayscale, while the constrast is preserved, the qr code still works
 
