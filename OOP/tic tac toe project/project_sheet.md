@@ -13,3 +13,9 @@ my scheme :
 ![WhatsApp Image 2025-07-27 at 18 45 28_20a80d51](https://github.com/user-attachments/assets/8c8f700c-8c11-4778-bc8c-9867ffddfa4f)
 
 
+
+
+diagram : 
+
+
+![tic tac toe Diagram](https://github.com/user-attachments/assets/89cd08ee-6b76-49c0-9c8e-d59d9e599471)
